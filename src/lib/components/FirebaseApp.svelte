@@ -4,9 +4,9 @@
   import type { Firestore } from "firebase/firestore";
   import type { FirebaseStorage } from "firebase/storage";
 
-  export let firestore: Firestore;
-  export let auth: Auth;
-  export let storage: FirebaseStorage;
+  export let firestore: Firestore | undefined = undefined;
+  export let auth: Auth | undefined = undefined;
+  export let storage: FirebaseStorage | undefined = undefined;
 
   setFirebaseContext({ firestore, auth, storage });
 </script>
